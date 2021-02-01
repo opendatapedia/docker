@@ -11,5 +11,5 @@ VERSION=$(cat ../VERSION.txt) && docker build --build-arg VERSION -t opendataped
 ## Usage
 
 ```shell
-docker run -it opendatapedia:0.0.1 sh
+docker run -it -v $PWD/opendatapedia:/local -w /local opendatapedia:0.2.0 sh
 ```
